@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../imgs/fundoLogin.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -20px;
+    height: 100%;
+    color: white;
+}
+
+.caixa {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 500px;
+    background-color: rgba(139, 139, 139, 0.2); /* semi-transparente para permitir o efeito de desfoque */
+    backdrop-filter: blur(10px); /* aplicação do efeito de desfoque */
+    -webkit-backdrop-filter: blur(10px); /* compatibilidade com navegadores baseados em WebKit */
+    border-radius: 20px;
+    padding: 50px;
+    box-shadow: 0px 0px 10px #000000;
+}
+
+h1 {
+    text-align: center;
+    margin-top: -20px;
+    margin-bottom: 40px;
+}
+
+.inputGroup {
+    margin-top: 20px;
+    position: relative;
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.inputGroup input {
+    width: 80%;
+    height: 40px;
+    border-radius: 20px;
+    background-color:  rgb(1, 2, 68);
+    border: 1px solid rgb(255, 255, 255);
+    color: white;
+    padding: 10px;
+    outline: none;
+}
+
+.inputGroup label {
+    position: absolute;
+    top: 10px;
+    left: 20%;
+    transform: translateX(-50%);
+    padding: 0 5px;
+    color: rgb(255, 255, 255);
+    pointer-events: none;
+    transition: 0.3s ease-in-out;
+}
+
+.inputGroup input:focus + label,
+.inputGroup input:not(:placeholder-shown) + label {
+    top: -18px;
+    font-weight: bold;
+    font-size: 16px;
+    color: rgb(255, 0, 0);
+}
+
+button {
+    justify-content: center;
+    align-self: center;
+    text-align: center;
+    width: 200px;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    border-style: none;
+}
+
+button:hover{
+    color: red;
+    background-color: rgb(1, 2, 68);
+}

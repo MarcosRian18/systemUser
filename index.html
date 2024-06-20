@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <div class="caixa">
+        <div class="login">
+            <h1>LOGIN</h1>
+            <div class="inputGroup">
+                <input type="email" id="email" placeholder=" " required>
+                <label for="email">Email</label>
+            </div>
+            <div class="inputGroup">
+                <input type="password" id="password" placeholder=" " required>
+                <label for="password">Senha</label>
+            </div>
+            <button id="btnSubmit" type="submit" class="btn">Entrar</button>
+        </div>
+    </div>
+</body>
+
+<script>
+    document.getElementById('btnSubmit').addEventListener("click", function() {
+        const email = document.getElementById('email').value
+        const password = document.getElementById('password').value
+
+        if(email === "admin" && password == '123'){
+            window.location.href = 'pages/home.html'
+        }else {
+            alert("Credenciais Inválidas")
+        }
+    })
+</script>
+</html>
