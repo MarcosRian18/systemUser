@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #063532;
+    height: 1200px;
+}
+
+header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    background-color: #7C7C7C;
+    padding: 0 20px;
+}
+
+header img {
+    position: relative;
+    width: 100px;
+    left: 50%;
+}
+
+
+.imgPerfil {
+    position: relative;
+    display: flex;
+    align-items: end;
+    right: 5%;
+}
+
+.teste {
+    width: 70px;
+    height: 70px;
+    background-color: blue;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+
+.imgPerfil p {
+    align-self: center;
+    margin-left: 10px;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.title {
+    position: relative;
+    color: white;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.line {
+    position: relative;
+    left: 43.5%;
+    width: 250px;
+    height: 2px;
+    background-color: white;
+    justify-items: center;
+    align-items: center;
+}
+
+.container {
+    position: relative;
+    top: 80px;
+    left: 25%;
+    max-width: 1000px;
+    height: 700px;
+    background-color: #1A5A56;
+}
+
+.comeco {
+    width: 100%;
+    height: 100px;
+    background-color: #D9D9D9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.comeco h1 {
+    margin-left: 30px;
+}
+
+.comeco button {
+    padding: 20px;
+    margin-right: 40px;
+    font-size: 20px;
+    background-color: rgb(15, 202, 15);
+    color: white;
+    border-style: none;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
