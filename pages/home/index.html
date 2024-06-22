@@ -25,18 +25,76 @@
     <div class="container">
         <div class="comeco">
             <h1>Gerenciamento de Usuários</h1>
-            <button>Novo Usuário</button>
+            <button id="newUser">Novo Usuário</button>
         </div>
 
         <table class="tbl">
             <tr>
                 <th>Nome</th>
                 <th>Email</th>
-                <th>Celulah</th>
+                <th>Celula</th>
                 <th>Phivilegio</th>
                 <th>Ações</th>
+            </tr>
+            <tr>
+                <td>Maria Silva</td>
+                <td>maria.silva@example.com</td>
+                <td>1234-5678</td>
+                <td>Admin</td>
+                <td><button>Editar</button> <button>Excluir</button></td>
+            </tr>
+            <tr>
+                <td>João Souza</td>
+                <td>joao.souza@example.com</td>
+                <td>9876-5432</td>
+                <td>Usuário</td>
+                <td><button>Editar</button> <button>Excluir</button></td>
+            </tr>
+            <tr>
+                <td>Ana Pereira</td>
+                <td>ana.pereira@example.com</td>
+                <td>4567-8910</td>
+                <td>Moderador</td>
+                <td><button>Editar</button> <button>Excluir</button></td>
+            </tr>
+            <tr>
+                <td>Pedro Costa</td>
+                <td>pedro.costa@example.com</td>
+                <td>1122-3344</td>
+                <td>Usuário</td>
+                <td><button>Editar</button> <button>Excluir</button></td>
+            </tr>
+            <tr>
+                <td>Lucia Ferreira</td>
+                <td>lucia.ferreira@example.com</td>
+                <td>2233-4455</td>
+                <td>Admin</td>
+                <td><button>Editar</button> <button>Excluir</button></td>
             </tr>
         </table>
     </div>
 </body>
+<script>
+    document.getElementById('newUser').addEventListener('click', function() {
+        const novoUser = {
+            nome: "Marcos Rian",
+            email: "marcos@gmail.com",
+            telefone: "6199145874",
+            privilegio: "comum"
+        }
+
+        const tabela = document.querySelector('.tbl')
+        const novalinha = document.createElement('tr')
+
+        novalinha.innerHTML = `
+            <td>${novoUser.nome}</td>
+             <td>${novoUser.email}</td>
+              <td>${novoUser.telefone}</td>
+               <td>${novoUser.privilegio}</td>
+                <td><button>Editar</button> <button>Excluir</button></td>
+        `
+
+        tabela.appendChild(novalinha)
+    })
+</script>
 </html>
